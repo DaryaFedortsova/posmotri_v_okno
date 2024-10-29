@@ -86,15 +86,15 @@ ol {
   appearance: none;
 }
 
-.search-form__label:not(:has(.search-form__textfield)):hover {
+.search-form__label:not(:has(.search-form__textfield)):hover, 
+.button:hover {
   text-decoration: underline;
 }
 
+.search-form__textfield:focus, 
+.content__card-link:focus, 
+.button:focus, 
 .search-form__textfield:active {
-  outline: none;
-}
-
-.search-form__textfield, .content__card-link, .button:focus {
   outline: none;
 }
 
@@ -165,18 +165,9 @@ ol {
   background-color: transparent;
   color: #fff;
   cursor: pointer;
-  border: none;
   border: 1px solid #fff;
   height: 34px;
   width: 100%;
-}
-
-.button:active {
- background-color: #545050; 
-}
-
-.button:hover {
-  text-decoration: underline;
 }
 
 .button:focus-visible {
@@ -187,7 +178,7 @@ ol {
 .content__details {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 21px;
 }
 
 .title {
@@ -203,6 +194,7 @@ ol {
 
 .content__list {
   height: 298px;
+  width: 415px;
   overflow-y: auto;
   position: relative;
 }
@@ -221,11 +213,9 @@ ol {
   display: block;
 }
 
-.content__card-link_current {
-  background-color: #545050;
-}
-
-.content__card-link:active {
+.content__card-link_current, 
+.content__card-link:active, 
+.button:active {
   background-color: #545050;
 }
 
@@ -265,7 +255,6 @@ ol {
 
 .content__video-card-description {
   color: #fff;
-  font-size: 18px;
   font-weight: 400;
   line-height: 90%;
 }
