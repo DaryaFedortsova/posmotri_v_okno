@@ -165,7 +165,7 @@ ol {
   background-color: transparent;
   color: #fff;
   cursor: pointer;
-  border: 1px solid #fff;
+  outline: 1px solid #fff;
   height: 34px;
   width: 100%;
 }
